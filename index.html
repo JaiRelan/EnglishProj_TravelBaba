@@ -1,0 +1,631 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Explore The Beaty of India, One City At A Time</title><style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="0a48be97-07dd-457b-90eb-c42fd48e4962" class="page sans"><header><img class="page-cover-image" src="https://images.unsplash.com/photo-1533169859263-38b2c186d219?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;ixid=eyJhcHBfaWQiOjYzOTIxfQ" style="object-position:center 31.05%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">🏖️</span></div><h1 class="page-title">Explore The Beaty of India, One City At A Time</h1></header><div class="page-body"><p id="40ee15b6-d08b-409c-8247-35645e66dc74" class="">Hello travellers, 👋🏼 </p><h3 id="a6440c02-3648-45ef-95a2-89b2ebffea21" class="">Welcome back to the travel baba blog. We&#x27;re back to present the up and coming travel destinations for this month 🧳</h3><h3 id="2fbc1a19-aa24-4e50-9b04-a87575fdf908" class=""><mark class="highlight-blue">Feel free to visit our website for a free, </mark><mark class="highlight-red">one-on-one travel consultation</mark><mark class="highlight-blue"> so we can help you plan your perfect weekend getaway or nature expedition into the mountains with friends. Travel-baba helps everyones find their perfect holiday destination with a personalized itinerary planner. </mark></h3><hr id="ddfd2e32-fef3-47b6-8e3e-70ffaeb43e47"/><h1 id="e33a9d73-60b0-423c-bc45-efbd2818b21f" class="">📌 The Plan</h1><p id="e0f31004-a41e-4746-9ae3-2cc853ef3848" class=""><mark class="highlight-teal">This week, we&#x27;re off to three different locations, two of them in South India, followed by a wonderful adventure into the North Eastern state of Assam. So here we go ✈️🎒</mark></p><h2 id="28b56a48-1da6-4a1f-8356-09f05c1ca928" class="block-color-yellow">Goa</h2><div id="eea52027-4ae5-4246-8ec8-59a20fba83ff" class="column-list"><div id="b686a822-8bb9-4b96-8719-eb5e9124d856" style="width:56.25%" class="column"><figure id="bbf0c54a-4411-4381-b2bc-85a7d2d0de81" class="image"><a href="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/Untitled.png"><img style="width:288px" src="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/Untitled.png"/></a><figcaption>Me, getting babysitting duty and holding my brother&#x27;s hands</figcaption></figure></div><div id="6e000c6e-f8e0-494a-93bb-320817589d46" style="width:43.74999999999998%" class="column"><p id="6b411293-e4e0-403d-8866-508c4764b852" class=""><mark class="highlight-orange">Goa is, in my opinion of the most beautiful states of India 🏖️ It is a beautiful state filled with beaches all the way around. Goa is known for it&#x27;s year-round weather </mark>☁️ <mark class="highlight-orange">and wonderful beaches. </mark></p><p id="5ff38889-c459-4ec2-a897-547752e469d9" class=""><mark class="highlight-orange">The spellbinding sun 🌞 and the mellow beaches suck you into their beauty. This was my third time in Goa but I still got sucked into the atmosphere and while I had the option to do quite a lot, I just took the time to lie down and soak it all in. </mark></p></div></div><div id="035b0971-b079-4429-ad70-84d361246a5d" class="column-list"><div id="d28423fc-544f-45f5-85de-299c9b0baa8d" style="width:37.5%" class="column"><p id="ab345b12-e0b7-42b5-8709-566360bc40f2" class=""><mark class="highlight-orange">Goa was quite a wonderful experience. In the past, I had been living in North Goa which was the hub for all the activities. During this time, we stayed in a hotel by the beach, but I personally found that vacation too hectic. During that visit, we spent most of our times inside the hotel or at museums (I spent quite a long time at the Goa Science Centre). </mark></p></div><div id="685a647b-d232-4c96-8f7a-05b1f73d094b" style="width:62.5%" class="column"><figure id="c590c247-ce64-4da2-9856-0b877170b6ab" class="image"><a href="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/Untitled%201.png"><img style="width:336px" src="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/Untitled%201.png"/></a><figcaption>Image courtesy of the author (January 2020)</figcaption></figure><p id="9e291676-d77f-44bb-9b50-190b27d369af" class="">
+</p></div></div><figure id="b66e3503-7064-4759-8448-dcd4f1c9ad71" class="image"><a href="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/hamza-shaikh-AQXp5HOR_CY-unsplash.jpg"><img style="width:4000px" src="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/hamza-shaikh-AQXp5HOR_CY-unsplash.jpg"/></a><figcaption>Photo by Hamza Shaikh on Unsplash</figcaption></figure><p id="31e726b3-2f26-4624-a2e0-b6d27f960dad" class=""><mark class="highlight-orange">This time, I decided to take a different approach... We stayed in a nice spread-out resort in the South of Goa, spending time to enjoy the beaches. Throughout this whole experience, I had kept my phone off and it was a truly relaxing and reposeful vacation. Apart from the other guests of the resort and the locals who ran resorts, the beaches were uninhabited giving a sense of tranquility. </mark></p><figure id="2da3f3b4-cca6-41b9-af64-7c9069319cd2" class="image"><a href="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/sonaal-bangera-tqKAUi4rYYY-unsplash.jpg"><img style="width:4000px" src="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/sonaal-bangera-tqKAUi4rYYY-unsplash.jpg"/></a><figcaption>Photo by Sonaal Bangera on Unsplash</figcaption></figure><figure id="2292565d-8f7b-453c-916c-700c2d6f4c10" class="image"><a href="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/vipin-nair-HK-S2P_x4MA-unsplash.jpg"><img style="width:3413px" src="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/vipin-nair-HK-S2P_x4MA-unsplash.jpg"/></a><figcaption>Photo by Vipin Nair on Unsplash</figcaption></figure><div id="0de30a5a-2a6f-440d-b550-fd7d9b6507f3" class="column-list"><div id="87710880-8bc2-4a6d-8946-2bacb00c597e" style="width:50%" class="column"><figure id="90449c0f-3519-4e43-bcaf-a34be8f4e54c" class="image"><a href="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/anubhav-arora-9Z7BWf4StmM-unsplash.jpg"><img style="width:3895px" src="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/anubhav-arora-9Z7BWf4StmM-unsplash.jpg"/></a><figcaption>Photo by Anubhav Arora on Unsplash</figcaption></figure></div><div id="9877fbba-b912-44d6-92da-489b04b4947b" style="width:50%" class="column"><figure id="c00778aa-42ea-4d69-b4f7-a309ec641b15" class="image"><a href="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/ishvani-hans-xWFL4KNd_2A-unsplash.jpg"><img style="width:3024px" src="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/ishvani-hans-xWFL4KNd_2A-unsplash.jpg"/></a><figcaption>Photo by Ishvani Hans on Unsplash</figcaption></figure></div></div><p id="417639a3-61a9-4ca9-9b8a-a57baa657179" class="block-color-orange">Goa is all about sun, sea and sand. Goa is popular for its range of seafood delicacy. Goa&#x27;s weather will warm your heart if you are a nature&#x27;s lover. Be it trekking, camping, spirituality and any relaxing activity by beach you name it and Goa has it all.</p><p id="d0cf9399-b24b-4de2-8eca-560771b577d2" class="block-color-orange">Ruled by Portuguese in the past, this region is famous for fusion of European and Indian culture and beauty. The Western Ghats running through the region makes it lush for wildlife and flora too. Goa is one of the most important tourist spots in the country because of its beauty and culture.</p><p id="934264dd-2b67-471f-8119-80a0bef3f856" class="block-color-orange">Every February, Goa comes alive to celebrate the carnival. A festival that dates back to the Portuguese era, it is celebrated with great pomp throughout the state, with the Catholic community leading the charge. Across the city and villages, you will see people dressed in traditional clothing or even fancy dress, with good food making it a party.</p><figure id="b02a017d-b8b3-489d-a24b-c3e77ba2f72b" class="image"><a href="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/alexey-turenkov-bWJiSZjIgTM-unsplash.jpg"><img style="width:2048px" src="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/alexey-turenkov-bWJiSZjIgTM-unsplash.jpg"/></a><figcaption>A photo by alexey turenkov showing the mesmerizing beaches of Goa (sourced: Unsplash) </figcaption></figure><h2 id="76efdd5b-a5a3-4005-957e-379bb834cdd0" class="block-color-yellow">Coorg</h2><p id="f4b38c89-8a2a-45da-a686-f43d8dd35146" class="block-color-pink"><mark class="highlight-pink">Coorg, officially called Kodagu, lying between Mysore and the coastal town of Mangalore, is the most sought after and popular hill station of Karnataka. Lying serenely amidst high mountains, Coorg’s landscape stays misty throughout the year. Undulating hills covered in lush green forests and a landscape dotted with coffee plantations, tea gardens and orange groves, this hill station has breathtakingly stunning scenic beauty with highest rainfall across the nation.</mark></p><figure id="21ac93ee-b28e-4fbb-ae35-f6809c90f2eb" class="image"><a href="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/coorg-trip.jpg"><img style="width:1000px" src="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/coorg-trip.jpg"/></a></figure><p id="90be833b-bf0b-4799-b37f-0a6db4ca75de" class=""><mark class="highlight-pink">Coorg was named as the &#x27;Scotland of India&#x27; during the time of the British due to its breathtaking landscapes, pleasant weather, wooded slopes and quaint villages. The beauty of this region is well-preserved albeit the surge of urbanisation. Coffee Estates are in abundance and plantation tours are some of the unique things to try in Coorg. Did you know that Coorg is one of the largest producers of coffee in India? It was Britishers who began the coffee plantations in the region. Don&#x27;t forget to shop for coffee powder in one of the local stores!</mark></p><figure id="73e448b6-d9ad-4cc1-a687-557331c1894e" class="image"><a href="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/coffeecoorg-08-1475915311.jpg"><img style="width:720px" src="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/coffeecoorg-08-1475915311.jpg"/></a></figure><p id="4262765e-29c3-4313-b550-bf7b15b96969" class=""><mark class="highlight-pink">At 5724 feet, Tadiandamol is the highest peak in Coorg and the ideal place for a trek. Just a few kilometres from the peak is Padi Igguthappa temple, one of the holiest temples of the Kodavas. The trek is long and weary but the peace and quiet at the top is definitely worth all the effort!</mark></p><figure id="9831ae14-cfd9-4a1c-853f-574dcbdfc8d4" class="image"><a href="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/16a.jpg"><img style="width:996px" src="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/16a.jpg"/></a></figure><div id="6b876ec0-9cbe-4a81-ae04-242ca8d05dd3" class="column-list"><div id="4d526d55-ef11-400a-a2e7-b50cac6fa494" style="width:50%" class="column"></div><div id="ac68f989-dd04-429f-a136-c4036207b320" style="width:50%" class="column"></div></div><p id="f108f730-a0ef-424f-933e-e27a1a6409ce" class="">
+</p><h2 id="a52dcdbd-f2a7-47af-9796-2b393a54bed6" class=""><mark class="highlight-yellow">Assam</mark></h2><div id="2d6ca85b-f4ed-4db1-8ed6-ed7387f52faa" class="column-list"><div id="05f8be2c-67b3-4986-93da-6afbccd57608" style="width:56.25%" class="column"><figure id="92077530-a53c-4e40-944b-1f861a6e495b" class="image"><a href="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/6_1536042716m.jpg"><img style="width:336px" src="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/6_1536042716m.jpg"/></a></figure></div><div id="831e5f44-f98c-4cdf-8454-d6a83763c450" style="width:43.75%" class="column"><p id="4238d812-49e1-4127-aa3f-247f6d3bc8ac" class="block-color-teal">Assam, the paradise of India 🌄, a treasure trove of natural beauty and diverse history, is one of the least explored regions in the country, lending it an immaculate, untouched aura that is sure to allure you. A land of wild forests, mighty rivers, and acres and acres of tea plantations, located in North East India, it has a breath-taking landscape and is known to be one of the top biodiversity hotspots in the entire world.  </p><p id="d46a7be3-dd9b-4408-ba2f-98537717ac20" class="">
+</p></div></div><p id="a979a747-2f3b-408b-b66c-9dd52e94f30f" class="block-color-teal"><mark class="highlight-teal">Assam is the gateway to the enchanting and unexploited northeastern part of the country. With the majestic Brahmaputra River, magnificent hills, its rich flora and fauna, the state is every tourist&#x27;s paradise. </mark></p><figure id="2660246a-d4f1-4c5d-913a-4de362cee6ad" class="image"><a href="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/Screenshot_2020-10-03_at_12.15.21_PM.png"><img style="width:1218px" src="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/Screenshot_2020-10-03_at_12.15.21_PM.png"/></a></figure><figure id="3ff01c09-24c1-479e-a40d-d8c2b8d483c2" class="image"><a href="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/Untitled%202.png"><img style="width:1360px" src="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/Untitled%202.png"/></a></figure><p id="6cbcfd17-b5a5-4d96-bb7f-b415369edd1d" class="block-color-teal">Assam, with its ancient temples, dotting the cityscape, the wildlife sanctuaries, sonic beauty of Brahmaputra and its culture makes it one of the most visited tourist places in North East India. There is something for everyone here - from families to motorbike enthusiastic, no one leaves disappointed from here.</p><figure id="b0f103ae-a5ab-4336-b908-4fc958cfb241" class="image"><a href="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/krishna-kant-VaZ2OqmQWKs-unsplash.jpg"><img style="width:6000px" src="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/krishna-kant-VaZ2OqmQWKs-unsplash.jpg"/></a><figcaption>Photo by Krishna Kant on Unsplash</figcaption></figure><figure id="28b2354a-51d1-40be-a168-97ca2808f304" class="image"><a href="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/damiya-farhana-RVMrc9tR4dc-unsplash.jpg"><img style="width:3456px" src="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/damiya-farhana-RVMrc9tR4dc-unsplash.jpg"/></a><figcaption>Photo by Damiya farhana on Unsplash</figcaption></figure><figure id="f6730ea0-cc19-4cec-88bc-599534c5d456" class="image"><a href="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/bhupesh-talwar--lk96OJC_qc-unsplash.jpg"><img style="width:3629px" src="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/bhupesh-talwar--lk96OJC_qc-unsplash.jpg"/></a><figcaption>Photo by Bhupesh Talwar on Unsplash</figcaption></figure><figure id="e494e99a-561b-43c7-977c-30eccc2d2f40" class="image"><a href="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/Screenshot_2020-10-03_at_12.15.30_PM.png"><img style="width:768px" src="Explore%20The%20Beaty%20of%20India,%20One%20City%20At%20A%20Time%20bbf0c54a44114381b2bc85a7d2d0de81/Screenshot_2020-10-03_at_12.15.30_PM.png"/></a></figure><p id="435a698f-1cda-4079-906a-ffa1577ff204" class="">
+</p></div></article></body></html>
